@@ -12,7 +12,7 @@ const BugListTable = (props:{bugs: IBug[], onDeleteBug: Function })=>{
         <tr>
           <th>Description</th>
           <th>Priority</th>
-          <th></th>
+          <th>Status</th>
         </tr>
       </thead>
       <tbody>

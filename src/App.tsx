@@ -39,7 +39,7 @@ function App() {
         <label htmlFor="newBugDescription">
           New Bug Description:
         </label>
-        <input type="text" id="newBugDescription" value={newBugDescription} onChange={(e) => setNewBugDescription(e.target.value)} />
+        <input data-testid="newBugDescription" type="text" id="newBugDescription" value={newBugDescription} onChange={(e) => setNewBugDescription(e.target.value)} />
         <label htmlFor="newBugPriority"> New bug Priority:
         </label>
         <select id="newBugPriority" value={newBugPriority} onChange={(e) => setNewBugPriority(e.target.value)}>
@@ -47,7 +47,7 @@ function App() {
           <option value="Medium">Medium</option>
           <option value="High">High</option>
         </select>
-        <button type="submit">Add New Bug</button>
+        <button data-testid="addButton" type="submit">Add New Bug</button>
       </form>
     </div>
   );
